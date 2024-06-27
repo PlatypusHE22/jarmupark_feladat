@@ -1,7 +1,7 @@
 ﻿namespace JarmuPark {
     public class Busz: Jarmu {
         private int ferohely;
-        private double szorzo;
+        public static double Szorzo;
 
         public Busz(string azonosito, string rendszam, int gyartasiEv, double fogyasztas, int ferohely) : base(azonosito, rendszam, gyartasiEv, fogyasztas)
         {
@@ -15,7 +15,7 @@
 
         public override int BerletiDij()
         {
-            return (int)(base.BerletiDij() + ferohely * szorzo);
+            return (int)(base.BerletiDij() + ferohely * Szorzo);
         }
 
         public override string ToString()

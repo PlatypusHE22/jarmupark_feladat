@@ -12,6 +12,18 @@
          private int aktualisKoltseg;
          private bool szabad;
 
+         public string Azonosito => azonosito;
+         public string Rendszam => rendszam;
+         public int GyartasiEv => gyartasiEv;
+         public double Fogyasztas => fogyasztas;
+         public double FutottKm => futottKm;
+         public int AktualisKoltseg => aktualisKoltseg;
+         public bool Szabad
+         {
+             get => szabad;
+             set => szabad = value;
+         }
+
          protected Jarmu(string azonosito, string rendszam, int gyartasiEv, double fogyasztas)
          {
              this.azonosito = azonosito;
